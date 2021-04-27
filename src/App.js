@@ -11,7 +11,7 @@ function App() {
   const [levelFilter, setLevelFilter] = useState('')
 
   useEffect(() => {
-    axios.get('https://partners.9ijakids.com/index.php?partnerId=555776&accessToken=l0lawtvv-94bv-oi4d-u808-5ubz&action=catalogfilter')
+    axios.get('https://api.npoint.io/1b6f09888ccc91844702')
       .then(res => {
         setAxiosData(res.data)
         setError('')
